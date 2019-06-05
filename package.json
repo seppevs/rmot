@@ -1,0 +1,71 @@
+{
+  "name": "rmot",
+  "version": "0.0.1",
+  "description": "remove files older than",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "rmot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seppevs/rmot.git"
+  },
+  "scripts": {
+    "test": "jest --silent --coverage",
+    "coveralls": "jest --silent --coverage --coverageReporters=text-lcov | coveralls",
+    "lint": "eslint --cache --fix src/ test/"
+  },
+  "keywords": [
+    "remove",
+    "files",
+    "older",
+    "than",
+    "date"
+  ],
+  "author": "Sebastian Van Sande",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "tempy": "^0.3.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "dependencies": {
+    "p-filter": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules/",
+      "test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
