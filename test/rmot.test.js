@@ -1,8 +1,8 @@
-const asyncFs = require('./async-fs');
+const asyncFs = require('../src/async-fs');
 
-const rmot = require('./rmot');
+const rmot = require('../src/rmot');
 
-jest.mock('./async-fs', () => ({
+jest.mock('../src//async-fs', () => ({
   readdir: jest.fn(),
   stat: jest.fn(),
   unlink: jest.fn(),

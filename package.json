@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=8"
   },
-  "main": "rmot.js",
+  "main": "src/rmot.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/seppevs/rmot.git"

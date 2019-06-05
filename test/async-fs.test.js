@@ -1,6 +1,6 @@
 'use strict';
 
-const tempy = require('tempy');
+const tempy = require('tempy/index');
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
@@ -9,7 +9,7 @@ const open = promisify(fs.open);
 const close = promisify(fs.close);
 const access = promisify(fs.access);
 
-const asyncFs = require('./async-fs');
+const asyncFs = require('../src/async-fs');
 
 describe('async-fs', () => {
   describe('readdir()', () => {

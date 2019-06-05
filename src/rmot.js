@@ -1,6 +1,6 @@
 const path = require('path');
 const asyncFs = require('./async-fs');
-const pFilter = require('p-filter');
+const pFilter = require('p-filter/index');
 
 module.exports = async (dirPath, date) => {
 
