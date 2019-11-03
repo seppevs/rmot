@@ -1,6 +1,6 @@
 {
   "name": "rmot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "remove files older than",
   "engines": {
     "node": ">=8"
